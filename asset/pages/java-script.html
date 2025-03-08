@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script</title>
+        <!-- link -->
+    <!-- icon links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: black;
+            background-image: linear-gradient(to bottom right, black, #0C1844);
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: 100vw;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+             
+            margin-top: 10%;
+           
+        }
+        .java-script{
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+            margin-left: 280px;
+        }
+        .one{
+            height: 100px;
+            width: 20%;
+            margin-left: 10px;
+            border-radius: 8px; 
+          
+
+           
+        }
+        .two{
+            height: 100px;
+            width: 20%;
+            border-radius: 8px; 
+          
+
+         
+        }
+        .three{
+            height: 100px;
+            width: 20%;
+            
+        }
+      
+        h1{
+           color: white;
+           margin-bottom: 100px;
+           text-align: center;
+        }
+        /* social-button */
+ .social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 59px;
+  height: 59px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+ .social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+ .social-button:focus,
+
+.social-button:hover {
+  color: #fff;
+}
+
+.social-button:focus::after,
+.social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.social-button i {
+  font-size: 25.6px;
+}
+
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--github {
+  color: #6e5494;
+}
+
+.social-button--github::after {
+  background: #6e5494;
+}
+
+.top-box {
+            height: 20vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 70vw;
+
+        }
+
+    
+        .back-btn {
+  background: linear-gradient(to right, #0C1844, #1E3A8A); /* Gradient blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.back-btn:hover {
+  background: linear-gradient(to right, #1E3A8A, #2563EB); /* Lighter blue */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.back-btn:active {
+  transform: scale(0.95);
+}
+    
+@media screen and (max-width: 1200px) {
+  .java-script {
+    gap: 40px;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .java-script {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 0;
+  }
+  .one, .two, .three {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5%;
+  }
+  .java-script {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .one, .two, .three {
+    width: 80%;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .social-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .one, .two, .three {
+    width: 90%;
+    height: auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .social-button {
+    width: 45px;
+    height: 45px;
+  }
+  .social-button i {
+    font-size: 20px;
+  }
+  .back-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        
+            <h1>Java Script Projects</h1>
+       
+            <div class="top-box">
+            <a href="file:///Users/enjoy_01_b/Documents/MyPortfolio-main/index.html">
+            <button class="back-btn">Back</button></a>
+       
+            <a href="https://github.com/RitikaFullStackDeveloper/MyPortfolio/tree/main/asset/pages/js"
+            class="social-button social-button--github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="java-script">
+            <div class="one">
+                <a href="./js/calculator.html"> <img src="../../asset/image/calsi.webp"
+                        style="height: 150px;"></a>
+            </div>
+            <div class="two">
+                <a href="./js/counter.html"><img src="../../asset/image/counter.png"
+                        style="height: 135px; width: 150px; border-radius: 10px;"></a>
+            </div>
+            <div class="three">
+                <div class="one">
+                    <a href="./js/stop-watch.html"> <img src="../../asset/image/stopwatch.avif"
+                            style="height: 140px;width: 150px; border-radius: 10px;"></a>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

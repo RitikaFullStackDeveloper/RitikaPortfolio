@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flex-form</title>
+    <style>
+        .main-container {
+            width: 21cm;
+            height: 22.7cm;
+            margin: 20px auto;
+            border: 3px solid #000;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .first-box {
+            height: 30%;
+            width: 100%;
+            background-color: blue;
+            background-image: url(../../image/flex-form-bg.jpg);
+            height: 30%;
+            width: 100%;
+
+
+
+        }
+
+        h2 {
+            padding: 8%;
+        }
+
+        .second-box {
+
+            font-size: larger;
+            margin-left: 20%;
+        }
+
+        .submit {
+            background-color: #227B94;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px 4px;
+            cursor: pointer;
+        }
+
+        .submit {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="first-box">
+            <h2 style="text-align: center; font-size: xx-large;">Online Webinar Registration Form</h2>
+        </div>
+        <br>
+        <div class="second-box">
+            <label for="name">Webinar Topic List</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <lable for="name">First name</lable>
+            <input type="text" id="name" />
+
+            <lable for="name">Last name</lable>
+            <input type="text" id="name" />
+            <br>
+            <br>
+
+            <lable for="name">Email Address</lable>
+            <textarea name="Email address" id="Email Address"></textarea>
+            <br>
+            <br>
+            <lable for="name">Company</lable>
+            <input type="text" id="name" />
+
+            <lable for="name">Title</lable>
+            <input type="text" id="name" />
+            <br>
+            <br>
+            <lable for="name">Do you hve any question we should address during the webinar</lable><br>
+
+            <textarea name="text" id="name"></textarea>
+            <br>
+            <br>
+            <button class="submit">submit</button>
+        </div>
+</body>
+
+</html>
