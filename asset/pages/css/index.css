@@ -1090,3 +1090,6 @@ h1{
 .project__name:hover {
   opacity: 1;
 }
+a{
+  text-decoration: none !important;
+}
