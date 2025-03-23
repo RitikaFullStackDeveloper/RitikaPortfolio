@@ -426,6 +426,13 @@ nav {
   /* background-color: #c22121; */
 }
 
+.project-i{
+  height: 150px !important;
+  width: 150px !important;
+  margin-top: 10px !important;
+  
+}
+
 /* skill section */
 
 
@@ -930,7 +937,8 @@ nav {
   width: 80vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 40px;
+  
   
 }
 
@@ -1065,13 +1073,10 @@ h1{
   height: 120px;
   margin-top: 40px;
 }
-.project__name {
-
-  
+.project__name { 
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  
   color: #50534ad7;
   padding: 8px 12px;
   font-size: 1rem;
@@ -1079,8 +1084,9 @@ h1{
   border-radius: 5px;
   opacity:1;
   transition: opacity 0.3s ease-in-out;
+  text-align: center;
 }
 
-.project__card:hover .project__name {
+.project__name:hover {
   opacity: 1;
 }
